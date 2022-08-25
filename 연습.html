@@ -175,5 +175,127 @@
         </tr>
     </table>
 
+    <table border="1">
+        <caption>컴퓨터 주변 기기</caption>
+        <thead>
+            <tr>
+                <th>주변기기</th>
+                <th>이미지</th>
+                <th>주변기기</th>
+                <th>이미지</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>마우스</td>
+                <td><img src="" alt=""></td>
+                <td>프린터 </td>
+                <td><img src="" alt=""></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><address>신청연락처 : 02-123-4567</address></td>
+            </tr>
+        </tfoot>
+    </table>
+<header>
+    <h1>이미지 삽입 실습예제</h1>
+</header>
+    <article>
+        <section>
+            <figure>
+                <img src="image/" alt="">
+            </figure>
+        </section>
+    </article>
+
+    <h1>form 실습</h1>
+    <fieldset>
+        <legend>폼캡션 </legend>
+        입력양식 : <input type="text" name="폼실습?">
+    </fieldset>
+
+    <h1>폼태그-datalist태그실습예제</h1>
+    <div>choose a browser form this list:</div>
+    <input type="text" list="browsers">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="internet Explorer">
+        <option value="Opera">
+        <option value="Safari">
+        </datalist>
+
+        <h1>로그인 폼 만들기</h1>
+        <form action="">
+            ID : <input type="text" size="16" maxlength="10"
+        value="id">
+            PASS : <input type="password" name="p1" size="12">
+        </form>
+
+        <h1> 폼 연습 </h1>
+        <h2>피자 주문하기</h2><hr />
+        <!--이곳에 step1 HTML 코드를 입력하세요-->
+        <form>
+            <p><label>고객 이름: <input name="custname"></label></p>
+            <!-- 이곳에 Step3 HTML 코드를 입력하세요 -->
+            <p><label>전화 번호: <input type=tel name="custtel"></label></p>
+            <p><label>메일 주소: <input type=email name="custemail"></label></p>
+            <fieldset>
+                <legend> 피자 크기 </legend>
+                <label> <input type=radio name=size value="small"> Small </label>
+                <label> <input type=radio name=size value=" medium"> medium
+                </label>
+                <label> <input type=radio name=size value="large"> Large </label>
+            </fieldset>
+            <!-- 이곳에 Step2 HTML 코드를 입력하세요 -->
+            <fieldset>
+                <legend> 피자 토핑 고르기 </legend>
+                <label> <input type=checkbox name="topping" value="bacon"> 베이컨 </label>
+                <label> <input type=checkbox name="topping" value="cheese"> 치즈 </label>
+                <label> <input type=checkbox name="topping" value="onion"> 양파 </label>
+                <label> <input type=checkbox name="topping" value="mushroom"> 버섯 </label>
+            </fieldset>
+            <!--  이곳에 Step4 HTML 코드를 입력하세요 -->
+            <label>원하는 배달 시간: <input type=time min="11:00" max="21:00" step="900" name="delivery"></label>
+            <label>배달 요구 사항: <textarea name="comments"></textarea></label>
+            <p><button>피자 주문하기</button></p>
+        </form>
+
+        <article>
+        <h1>HTML5 연습하기</h1>
+        <form action="" method="post">
+            <p>1. 텍스트 입력: <input type="text" name="txtBox" value="텍스트 입력"></p>
+            <p>2. 암호 입력: <input type="password" name="txtPass" value="1234567"></p>
+            <p>3. 라디오 버튼: <input type="radio" name="radio">라디오</p>
+            <p>4. 체크 박스: <input type="checkbox" name="chkBbox">체크</p>
+            <p>5. 숨김 타입: <input type="hidden" name="hidden1">숨겨짐</p>
+            <p>6. 파일 타입: <input type="file" name="file1" value="파일"></p>
+            <p>7. 이미지 버튼: <input type="image" name="image1" value="이미지" src="image/woman-g7933a89e0_1920.jpg"></p>
+            <p>8. 전송 버튼: <input type="submit" name="btnSubmit" value="전송하기">전송</p>
+            <p>9. 취소 버튼: <input type="reset" name="btnRS" value="취소하기">취소</p>
+            <p>10. 버튼 생성: <input type="button" name="btnOK" value="확인하기">버튼</p>
+        </form>
+    </article>
+
+
+    <article>
+        <h1>input 요소의 타입(type) 연습1</h1>
+        <form action="" method="get"></form>
+        <p>검색 문자열:<input type="search" name="search" value="HTML5"></p>
+        <p>전화번호:<input type="tel" name="tel" size=13 required></p>
+        <p>홈페이지:<input type="url" name="url"></p>
+        <p>즐겨찾기:<input type="url" name="location" list="urls"></p>
+            <datalist id="urls">
+                <option label="MIME: Format of internet Message Bodies" value="http://tools.ietf.org/html/rfc2045">
+            </datalist>
+    </article>
+
+
+
+
+
+
 </body>
 </html>
